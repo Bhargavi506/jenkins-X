@@ -37,7 +37,15 @@ spec:
             - needs-ok-to-test
             - needs-rebase
         review_approved_required: false
-
+  
+  - name: chuck
+    context: "chuck"
+    always_run: false
+    optional: false
+    skip_report: true
+    trigger: "/jx chuck"
+    rerun_command: "/jx chuck"
+    source: https://github.com/Bhargavi506/demo.git
 
   postsubmits:
   - name: bootjob
